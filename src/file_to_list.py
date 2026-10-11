@@ -3,6 +3,7 @@ from pathlib import Path
 
 from src.correcting_list_name import correcting_list_name
 
+
 # Путь к директории, где лежит этот файл (src/)
 BASE_DIR = Path(__file__).resolve().parent
 # Поднимаемся на уровень вверх к корню проекта, затем в data/
