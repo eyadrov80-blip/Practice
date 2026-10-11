@@ -1,7 +1,8 @@
 # import os
 from pathlib import Path
 
-from src.correcting_list_name import correcting_list_name
+from src.correcting_list_names import correcting_list_names
+from src.sort_list_names import list_RU_names
 
 
 # Путь к директории, где лежит этот файл (src/)
@@ -31,7 +32,8 @@ def read_file() -> list[str]:
 if __name__ == "__main__":
     names = read_file()
     print(names)
-    print(correcting_list_name(names))
+    print(correcting_list_names(names))
+    print(list_RU_names(correcting_list_names(names)))
 
 #     print(BASE_DIR)
 #     print(DATA_FILE)

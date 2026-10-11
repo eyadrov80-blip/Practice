@@ -7,7 +7,7 @@ import re
 TEXT_PATTERN = re.compile(r"[^A-Za-zA-Яа-яЁё]")
 
 
-def correcting_list_name(raw_list: list[str]) -> list[str]:
+def correcting_list_names(raw_list: list[str]) -> list[str]:
     '''
     Возвращает новый список с очищенными строками (Только буквы), пустые строки удаляет из списка.
     :param raw_list:
