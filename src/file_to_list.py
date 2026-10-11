@@ -1,6 +1,7 @@
 # import os
 from pathlib import Path
 
+from src.correcting_list_name import correcting_list_name
 
 # Путь к директории, где лежит этот файл (src/)
 BASE_DIR = Path(__file__).resolve().parent
@@ -29,6 +30,7 @@ def read_file() -> list[str]:
 if __name__ == "__main__":
     names = read_file()
     print(names)
+    print(correcting_list_name(names))
 
 #     print(BASE_DIR)
 #     print(DATA_FILE)
